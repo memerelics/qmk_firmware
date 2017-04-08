@@ -1,12 +1,11 @@
-keyboard/planck/dfu-programmer.exe
 .dep
 *.o
+*.bin
 *.eep
 *.elf
-/*.hex
-/keyboard/**/*.hex
-/keyboard/**/keymaps/**/*.hex
-!/keyboard/**/keymaps/**/compiled.hex
+*.hex
+!util/bootloader.hex
+!quantum/tools/eeprom_reset.hex
 *.log
 *.lss
 *.lst
@@ -19,6 +18,7 @@ build/
 .build/
 *.bak
 .vagrant/
+quantum/version.h
 .idea/
 CMakeLists.txt
 .DS_STORE
@@ -28,3 +28,8 @@ CMakeLists.txt
 .project
 .settings/
 .idea
+.browse.VC.db*
+*.stackdump
+util/Win_Check_Output.txt
+.vscode
+.stfolder
