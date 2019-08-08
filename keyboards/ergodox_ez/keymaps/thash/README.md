@@ -9,7 +9,7 @@ $ make ergodox_ez:thash
 Then, 1st option is using `teensy_loader_cli` but as of 2019-07 I don't install it.
 
 ```
-$ teensy_loader_cli -mmcu=atmega32u4 -w ../../.build/ergodox_ez_thash.hex
+$ teensy_loader_cli -mmcu=atmega32u4 -w ergodox_ez_thash.hex
   Then press [RESET]. RESET = L2 + ESC
 ```
 
